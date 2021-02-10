@@ -4,22 +4,12 @@
 }
 
 .site-nav {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
-.site-nav {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 
   &-item:not(:last-child) {
-    @media screen and (min-width: 768px) {
-      margin-right: 50px;
-    }
+    margin-right: 50px;
   }
 }
 .site-nav-link,

@@ -1,0 +1,27 @@
+.header-buttom {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $buttom-text;
+
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header_menu-icons {
+  fill: currentColor;
+  width: 24px;
+  height: 16px;
+}
+.header-buttom .icon-cross {
+  display: none;
+}
+.header-buttom.is-open .icon-cross {
+  display: block;
+}
+.header-buttom.is-open .icon-menu {
+  display: none;
+}
