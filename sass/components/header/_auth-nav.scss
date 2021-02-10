@@ -31,7 +31,6 @@
 
 .auth-nav-link {
   display: flex;
-  justify-content: center;
   align-items: center;
   @media screen and (min-width: 768px) {
     padding: 0;
@@ -55,12 +54,22 @@
 }
 
 .header-icon {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &.icon-phone {
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
   &:hover {
     fill: $accent-color;
   }
