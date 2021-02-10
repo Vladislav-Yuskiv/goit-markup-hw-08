@@ -1,7 +1,10 @@
 .team-section {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team-photo {
+  width: 100%;
 }
 .list-name {
   font-weight: 500;
@@ -17,37 +20,33 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-// .team-list {
-//   display: flex;
-// }
-.team-list-item {
-  margin-right: 30px;
 
-  width: 270px;
+.team-list-item {
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 24px;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.list-name {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
 
-  .list-name {
-    padding-bottom: 10px;
-    padding-top: 30px;
-  }
-
-  .profession {
-    margin-bottom: 16px;
-  }
+.profession {
+  margin-bottom: 16px;
 }
 
 .social-list {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .social-link {
   display: inline-flex;

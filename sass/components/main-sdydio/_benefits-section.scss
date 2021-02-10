@@ -8,16 +8,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-// .list-description {
-//   display: flex;
-// }
 .list-description-item {
-  width: 270px;
-  margin-right: 30px;
-
-  :last-child {
-    margin-right: 0;
-  }
+  width: 100%;
+  text-align: center;
 
   .list-title {
     padding-bottom: 10px;
@@ -30,7 +23,8 @@
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  padding: 25px 0;
+  text-align: center;
 
   &-icon {
     width: 70px;

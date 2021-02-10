@@ -487,12 +487,8 @@ p {
 }
 
 .list-description-item {
-  width: 270px;
-  margin-right: 30px;
-}
-
-.list-description-item :last-child {
-  margin-right: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .list-description-item .list-title {
@@ -505,7 +501,8 @@ p {
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  padding: 25px 0;
+  text-align: center;
 }
 
 .wrapper-icon {
@@ -520,6 +517,12 @@ p {
   letter-spacing: 0.03em;
 }
 
+.photo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .photo-list-item {
   width: 370px;
   margin-right: 30px;
@@ -530,7 +533,14 @@ p {
 }
 
 .work-section {
+  display: none;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .work-section {
+    display: block;
+  }
 }
 
 .img-wrap {
@@ -565,13 +575,23 @@ p {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .team-section {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team-photo {
+  width: 100%;
 }
 
 .list-name {
@@ -591,24 +611,20 @@ p {
 }
 
 .team-list-item {
-  margin-right: 30px;
-  width: 270px;
+  width: 100%;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 24px;
 }
 
-.team-list-item:last-child {
-  margin-right: 0;
-}
-
-.team-list-item .list-name {
+.list-name {
   padding-bottom: 10px;
   padding-top: 30px;
 }
 
-.team-list-item .profession {
+.profession {
   margin-bottom: 16px;
 }
 
@@ -620,7 +636,13 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: 30px;
+  }
 }
 
 .social-link {
