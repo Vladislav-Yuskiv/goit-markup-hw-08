@@ -1,11 +1,23 @@
 .modal {
   position: absolute;
+  min-height: 590px;
+  border-radius: 4px;
   top: 50%;
   left: 50%;
 
-  height: 581px;
-  width: 528px;
-  padding: 15px;
+  padding: 40px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: auto;
+    min-height: 609px;
+    top: 50%;
+    left: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 15px;
+    height: 581px;
+    width: 528px;
+  }
 
   background-color: #fff;
 

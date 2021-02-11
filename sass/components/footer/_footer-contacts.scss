@@ -42,9 +42,35 @@
   }
 }
 .footer-wrap {
-  display: flex;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.wrap-contacts-social {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
 }
 .footer-contacts {
-  margin-right: 70px;
-  width: 231px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    width: 231px;
+  }
 }
