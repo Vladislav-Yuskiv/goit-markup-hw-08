@@ -1078,8 +1078,8 @@ p {
 }
 
 .username .input,
-.username .input,
-.username .email .input {
+.mobile-number .input,
+.email .input {
   padding-left: 42px;
 }
 
